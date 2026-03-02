@@ -12,7 +12,7 @@
                     <p>Nama : M. Alfiansyah Azad</p>
                     <p>NIM : 20230140126</p>
                     <p>Program Studi : Teknologi Informasi</p>
-                    <p>Hobi : Ngoding</p>
+                    <p>Hobi : Dengerin Lagu</p>
                 </div>
             </div>
         </div>
