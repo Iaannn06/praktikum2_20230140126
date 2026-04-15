@@ -22,4 +22,9 @@ Screenshot migration Kategoris
 ERD
 <img width="607" height="267" alt="image" src="https://github.com/user-attachments/assets/9b0b7ad0-cf27-4d4e-8bb5-bdefe177a0ff" />
 
+validasi backend pada create product
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/46789285-aa24-4460-adb6-8579db1ad9ba" />
+
+validasi backend pada update/edit product
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7c062c11-5102-4687-b3a6-73b3fecf11a7" />
 
