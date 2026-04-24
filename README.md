@@ -28,3 +28,9 @@ validasi backend pada create product
 validasi backend pada update/edit product
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7c062c11-5102-4687-b3a6-73b3fecf11a7" />
 
+tampilan detail
+<img width="762" height="551" alt="image" src="https://github.com/user-attachments/assets/66a03c5e-9215-44a8-819d-af3a389ab863" />
+
+
+
+
