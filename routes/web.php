@@ -3,9 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProductController; 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\CategoryController;
 
+use App\Http\Controllers\KategoriController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::put('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
     Route::get('/product/edit/{product}', [ProductController::class, 'edit'])->name('product.edit');
     Route::delete('/product/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
-    Route::get('/kategori', [KategoriController::class, 'index'])->middleware('can:manage-product') ->name('kategori.index');
+    Route::resource('category', CategoryController::class); // Menambahkan resource route untuk CategoryController, yang secara otomatis akan membuat route untuk operasi CRUD pada kategori produk
 });
 
 require __DIR__.'/auth.php';

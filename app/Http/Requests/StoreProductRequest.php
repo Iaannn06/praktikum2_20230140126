@@ -15,7 +15,7 @@ class StoreProductRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'qty' => 'required|integer|min:1', 
+            'qty' => 'required|integer|min:1',
             'price' => 'required|numeric|min:0',
         ];
     }
@@ -29,6 +29,7 @@ class StoreProductRequest extends FormRequest
             'qty.integer' => 'Jumlah harus berupa angka bulat!',
             'price.required' => 'Harga produk wajib diisi!',
             'price.numeric' => 'Harga harus berupa angka yang valid!',
+            'category_id' => 'required|exists:category,id',
         ];
     }
 }
