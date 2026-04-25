@@ -14,19 +14,22 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::all();
+        $products = Product::all(); // Bisa diakses Admin & User (Read-Only)
         return view('product.index', compact('products'));
     }
 
     public function create()
     {
+        Gate::authorize('admin-only'); //hanya admin yang bisa akses form buat produk baru
+
         $categories = Category::all();
         return view('product.create', compact('categories'));
     }
 
     public function store(StoreProductRequest $request)
     {
-        // Otomatis nangkep category_id dari StoreProductRequest
+        Gate::authorize('admin-only'); //admin yang boleh simpan produk baru
+
         $validated = $request->validated();
         $validated['user_id'] = auth()->id();
 
@@ -37,16 +40,15 @@ class ProductController extends Controller
 
     public function show($id)
     {
-        $product = Product::findOrFail($id);
+        $product = Product::findOrFail($id); // Bisa diakses Admin & User (Read-Only)
         return view('product.view', compact('product'));
     }
 
     public function edit(Product $product)
     {
-        Gate::authorize('update', $product);
+        Gate::authorize('admin-only'); //hanya admin yang bisa edit produk
 
         $users = User::orderBy('name')->get();
-        // Wajib dipanggil biar dropdown kategori muncul di halaman Edit
         $categories = Category::all();
 
         return view('product.edit', compact('product', 'users', 'categories'));
@@ -54,10 +56,10 @@ class ProductController extends Controller
 
     public function update(UpdateProductRequest $request, $id)
     {
-        $product = Product::findOrFail($id);
-        Gate::authorize('update', $product);
+        
+        Gate::authorize('admin-only'); // hanya admin yang bisa update produk
 
-        // Otomatis nangkep category_id dari UpdateProductRequest
+        $product = Product::findOrFail($id);
         $validated = $request->validated();
         $product->update($validated);
 
@@ -66,8 +68,10 @@ class ProductController extends Controller
 
     public function delete($id)
     {
+        // Cuma Admin yang boleh hapus barang
+        Gate::authorize('admin-only');
+
         $product = Product::findOrFail($id);
-        Gate::authorize('delete', $product);
         $product->delete();
 
         return redirect()->route('product.index')->with('success', 'Product berhasil dihapus');

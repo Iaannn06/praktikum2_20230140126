@@ -30,6 +30,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/product/edit/{product}', [ProductController::class, 'edit'])->name('product.edit');
     Route::delete('/product/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
     Route::resource('category', CategoryController::class); // Menambahkan resource route untuk CategoryController, yang secara otomatis akan membuat route untuk operasi CRUD pada kategori produk
+    Route::resource('category', CategoryController::class);
 });
 
 require __DIR__.'/auth.php';
