@@ -28,6 +28,15 @@ validasi backend pada create product
 validasi backend pada update/edit product
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7c062c11-5102-4687-b3a6-73b3fecf11a7" />
 
+UCP1 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/51e02dd0-0c15-4688-a591-1addae5f2b0d" />
+
+tampilan halamnan barang user
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ae576212-54f2-4393-97cb-28d23e97f089" />
+
+Tampilan tambah produk admin
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c337d1c2-4673-4a63-a266-66c578bdd6e9" />
+
 tampilan detail
 <img width="762" height="551" alt="image" src="https://github.com/user-attachments/assets/66a03c5e-9215-44a8-819d-af3a389ab863" />
 
