@@ -40,6 +40,12 @@ Tampilan tambah produk admin
 tampilan detail
 <img width="762" height="551" alt="image" src="https://github.com/user-attachments/assets/66a03c5e-9215-44a8-819d-af3a389ab863" />
 
+tambah produk dengan api key
+<img width="514" height="680" alt="Screenshot 2026-05-07 123441" src="https://github.com/user-attachments/assets/1337d08e-2479-4ca5-b463-8081eb7be83b" />
+
+tambah kategori dengan api key
+<img width="520" height="590" alt="Screenshot 2026-05-07 123510" src="https://github.com/user-attachments/assets/8cb87c83-da07-451f-b73e-82b793bce436" />
+
 
 
 
